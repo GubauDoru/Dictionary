@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dictionary</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Dictionary</h1>
+	<div>
+		<label for="addWordField">Add word:</label><br>
+		<input type="text" id="addWordField">
+		<button onclick="addWord(); document.getElementById('addWordField').value = ''">Submit!</button>
+	</div>
+	<br>
+	<div>
+		<label for="searchField">Search for a word:</label><br>
+		<input type="text" id="searchField">
+		<button onclick="searchWord(); document.getElementById('searchField').value = ''">Search</button>
+	</div>
+	<p id="trueFalseParagraph"></p>
+</body>
+</html>
